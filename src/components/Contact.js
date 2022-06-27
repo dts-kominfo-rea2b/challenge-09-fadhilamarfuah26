@@ -2,15 +2,15 @@
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 import React from 'react';
 
-const Contact = ({kontak}) => {
+const Contact = (props) => {
+    const {name, phone, email} = props.data;
     return (
-        <div>
-         <ul>
-            {kontak.map((item)=>{
-            return <li key={item.name}>
-                {`${item.name} : ${item.phone}`}</li>
-            })};
-        </ul>
+        <div className='contact-card'>
+            <div className='detail-contact'>
+                <h3>{name} </h3>
+                <p> {phone} </p>
+                <p> {email} </p>
+            </div>
         </div>
     )
 }

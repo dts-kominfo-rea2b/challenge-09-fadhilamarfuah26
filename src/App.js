@@ -9,14 +9,16 @@ const App = () => {
   // Masukkan Header dan Contact ke dalam div App
   return (
     <div className="App">
-      <Header></Header>
-      <Contact kontak={contacts[0]}/>
-      <Contact kontak={contacts[1]}/>
-      <Contact kontak={contacts[2]}/>
-      <Contact kontak={contacts[3]}/>
-      <Contact kontak={contacts[4]}/>
-      <Contact kontak={contacts[5]}/>
-      <Contact kontak={contacts[6]}/>
+      <Header/>
+      <div className='container-card'>
+      <Contact data={contacts[0]} />
+       <Contact data={contacts[1]} />
+        <Contact data={contacts[2]} />
+         <Contact data={contacts[3]} />
+          <Contact data={contacts[4]} />
+             <Contact data={contacts[5]} />
+
+       </div>
 
     </div>
   );
